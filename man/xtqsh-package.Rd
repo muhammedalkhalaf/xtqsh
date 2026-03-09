@@ -69,6 +69,6 @@ Bofinger E (1975). "Estimation of a Density Function Using Order Statistics."
 }
 
 \author{
-\strong{Maintainer}: Merwan Roudane \email{merwanroudane920@gmail.com}
+\strong{Maintainer}:  
 
 }
