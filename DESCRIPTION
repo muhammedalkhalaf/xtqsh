@@ -1,0 +1,34 @@
+Package: xtqsh
+Type: Package
+Title: Panel Quantile Regression Slope Homogeneity Test
+Version: 1.0.0
+Date: 2026-03-07
+Authors@R: c(
+    person("Muhammad", "Alkhalaf", 
+           email = "muhammedalkhalaf@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-2677-9246")),
+    person("Merwan", "Roudane",
+           role = "ctb",
+           comment = "Original Stata implementation"))
+Description: Tests for slope homogeneity in panel quantile regression models. 
+    Implements the S-hat statistic (chi-squared asymptotics for fixed n, large T) 
+    and the D-hat statistic (standard normal asymptotics for large n and T) 
+    proposed by Galvao, Juhl, Montes-Rojas, and Olmo (2017) 
+    <doi:10.1093/jjfinec/nbx027>. Computes minimum distance quantile regression 
+    estimators that optimally combine individual panel estimates under slope 
+    homogeneity. Supports both joint tests across all coefficients and marginal 
+    tests for individual variables. Includes bandwidth selection methods 
+    (Hall-Sheather and Bofinger) and optional HAC variance estimation for 
+    dependent data.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports:
+    stats,
+    quantreg
+Suggests:
+    testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
